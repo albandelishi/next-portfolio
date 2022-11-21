@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^13.0.3",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.2",
+    "eslint-config-next": "^13.0.2",
+    "google-map-react": "^2.2.0",
+    "lottie": "^0.0.1",
+    "lottie-react": "^2.3.1",
+    "next": "^13.0.2",
+    "postcss": "^8.4.19",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "swiper": "^8.4.4"
+  }
+}

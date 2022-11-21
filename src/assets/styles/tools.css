@@ -1,0 +1,14 @@
+.tools-wrapper {
+  padding-top: 3rem;
+}
+.tools {
+  background: rgba(28, 30, 34, 0.8);
+  padding: 3% 0;
+}
+
+.tools-heading {
+  margin-left: 13%;
+}
+.tools .row {
+  margin: 0 10% 0 10%;
+}

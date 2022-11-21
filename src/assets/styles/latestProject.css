@@ -1,0 +1,88 @@
+.projects {
+  padding: 3rem 0;
+}
+
+.btn-slider {
+  margin: 1rem;
+  background: #eae6fe;
+  border-radius: 10rem;
+}
+
+.swiper-slide .card {
+  width: 100%;
+  height: 326px;
+  margin-bottom: 1.875rem;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  border: 0 solid transparent;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 13px 0 rgb(82 63 105 / 5%);
+}
+
+.swiper-slide .card-body {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 15%;
+  transition: 0.5s ease;
+}
+
+.projects .card-title,
+.projects .card-text {
+  color: #272727;
+  opacity: 1;
+}
+
+.projects .card a {
+  border: #272727 2px solid;
+  /* border-color: #272727; */
+}
+
+.swiper-slide:hover .card-body {
+  height: 80% !important;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  margin-top: -1rem;
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-slide:hover img {
+  filter: grayscale(100%) blur(1px) brightness(48%);
+  -webkit-filter: grayscale(100%) blur(1px) brightness(48%);
+  -moz-filter: grayscale(100%) blur(1px) brightness(48%);
+  opacity: 0.5;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .swiper-slide:hover .card-body {
+    height: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .swiper-slide:hover .card-body {
+    height: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .swiper-slide:hover .card-body {
+    height: 60%;
+  }
+}

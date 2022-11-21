@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto/roboto-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto/roboto-v30-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto/roboto-v30-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto/roboto-v30-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+html {
+  overflow: auto;
+}
+body,
+body[data-theme="light"] {
+  --color-text-primary: #272727;
+  --color-text-secondary: #585656;
+  --color-bg-primary: #ffffff;
+  --color-button-background: #272727;
+  --color-button-text: #ffffff;
+  --color-button-hover: #00aab8;
+  --color-box-shadow: 10px 10px 5px 0px rgb(39, 39, 39, 0.4);
+
+  --color-gradient-background: linear-gradient(
+    125deg,
+    #ecfcff 0%,
+    #ecfcff 40%,
+    #b2fcff calc(40% + 1px),
+    #b2fcff 60%,
+    #5edfff calc(60% + 1px),
+    #5edfff 72%,
+    #3e64ff calc(72% + 1px),
+    #3e64ff 100%
+  );
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e3e6ea;
+  --color-bg-primary: #0d0a2c;
+  --color-button-background: #ffffff;
+  --color-button-text: #0d0a2c;
+  --color-button-hover: #00aab8;
+  --color-box-shadow: 10px 10px 5px 0px rgb(255, 255, 255, 0.4);
+  --color-gradient-background: linear-gradient(
+      129.96deg,
+      #ff2f2f 10.43%,
+      #000460 92.78%
+    ),
+    radial-gradient(100% 246.94% at 100% 0%, #ffffff 0%, #020063 100%),
+    linear-gradient(121.18deg, #1400ff 0.45%, #3a0000 100%),
+    linear-gradient(154.03deg, #ff002e 0%, #ff003d 74.04%),
+    linear-gradient(341.1deg, #b25bba 7.52%, #1700a7 77.98%),
+    linear-gradient(222.34deg, #0047ff 12.99%, #ff0000 87.21%),
+    linear-gradient(150.76deg, #b7d500 15.35%, #2200aa 89.57%);
+  background-blend-mode: overlay, color-burn, screen, overlay, difference,
+    difference, normal;
+}
+
+body {
+  background: var(--color-gradient-background);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  will-change: transform;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+a svg:hover {
+  color: var(--color-button-hover);
+}
+
+footer {
+  color: #fff;
+  background: rgba(43, 56, 76, 0.3);
+}

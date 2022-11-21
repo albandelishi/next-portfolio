@@ -1,0 +1,66 @@
+.services {
+  padding-top: 3rem;
+}
+
+.services .card {
+  background-color: rgba(28, 30, 34, 0.8);
+  height: 15rem;
+}
+.services .card:hover {
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: var(--color-box-shadow);
+  -webkit-box-shadow: var(--color-box-shadow);
+  -moz-box-shadow: var(--color-box-shadow);
+}
+
+.services .card-text {
+  color: #ffffff;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .services .card {
+    margin-top: 1rem;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .services .card {
+    margin-top: 1rem;
+    height: 12rem;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .services .card {
+    margin-top: 1rem;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .services .card {
+    margin-top: 1rem;
+    height: 23rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .services .card {
+    height: 20rem;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .services .card {
+    height: 15rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .services .card {
+    height: 15rem;
+  }
+}
