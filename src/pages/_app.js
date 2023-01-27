@@ -9,11 +9,13 @@ import "../assets/styles/contact.css";
 import "../assets/styles/loader.css";
 import "aos/dist/aos.css";
 import { Sono } from "@next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 const sono = Sono();
 export default function MyApp({ Component, pageProps }) {
   return (
     <main className={sono.className}>
       <Component {...pageProps} />
+      <Analytics />
     </main>
   );
 }
